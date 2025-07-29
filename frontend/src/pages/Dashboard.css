@@ -1,0 +1,188 @@
+.dashboard-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard-title {
+  font-size: 1.8em;
+  color: #333;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.user-info-card {
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.user-info-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.user-email {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.create-note-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-note-button:hover {
+  background-color: #0056b3;
+}
+
+.notes-section h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.note-input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input-field {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.note-input-field::placeholder {
+  color: #aaa;
+}
+
+.note-input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.add-note-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.add-note-button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  background-color: #ffe0e0;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-notes-message {
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.note-text {
+  flex-grow: 1;
+  font-size: 1em;
+  color: #444;
+}
+
+.delete-note-button {
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 5px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.delete-note-button:hover {
+  color: #cc0000;
+}
+
+@media (min-width: 768px) {
+  .dashboard-container {
+    max-width: 500px;
+  }
+}
